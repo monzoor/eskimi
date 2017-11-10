@@ -1,7 +1,9 @@
 {
-  "name": "falcon-asset-builder",
-  "description": "Falson asset builder",
+  "name": "eskimi",
+  "version": "1.0.0",
+  "description": "To work with Eskimi front end you need to follow this steps #### Installation   - Install nodejs from [here](https://nodejs.org/en/download/)   - Install grunt from [here](https://gruntjs.com/getting-started)   - Go to project folder and run this `npm i` #### Working command - `grunt` it will create the assets for dev - `grunt server` it will create the assets for dev and watch the changes - `grunt build` it will create the assets for production",
   "main": "Gruntfile.js",
+  "dependencies": {},
   "devDependencies": {
     "bootstrap": "^4.0.0-beta.2",
     "grunt": "~0.4.1",
@@ -20,5 +22,17 @@
     "grunt-task-loader": "^0.6.0",
     "jquery": "^3.2.1"
   },
-  "dependencies": {}
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monzoor/eskimi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/monzoor/eskimi/issues"
+  },
+  "homepage": "https://github.com/monzoor/eskimi#readme"
 }

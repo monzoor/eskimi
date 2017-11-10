@@ -1,6 +1,6 @@
 # Falcon front end setup
 
-To work with flacon front end you need to follow this steps
+To work with Eskimi front end you need to follow this steps
 #### Installation
   - Install nodejs from [here](https://nodejs.org/en/download/)
   - Install grunt from [here](https://gruntjs.com/getting-started)
