@@ -78,11 +78,7 @@ p {
 //## Global text color styles
 // Text Styles
 .text {
-	// font-family
-	&-lato-thin {
-		font-family: $font-family-lato;
-		font-weight: 300;
-	}
+
 	&-cap {
 		text-transform: capitalize;
 	}
@@ -123,23 +119,5 @@ p {
 	}
 	&-nowrap {
 		white-space: nowrap;
-	}
-}
-
-a {
-    &.base-text {
-        &:hover {
-            // @extend .hover-text;
-        }
-    }
-	&.no-hover {
-		&:hover {
-			// color: color-maker('shoparu','base') !important;
-		}
-	}
-}
-.all-base-text {
-	a {
-		// @extend .base-text;
 	}
 }

@@ -8,6 +8,18 @@
     <link rel="stylesheet" href="build/css/style.css">
 </head>
 <body>
+    <?php include "partials/header.php" ?>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2 sidebar p-0">
+                <?php include "partials/sidebar.php" ?>
+            </div>
+            <div class="col-10">
+                <?php include "content/overview.php" ?>
+            </div>
+        </div>
+    </div>
+    
     
     <script type="text/javascript" src="build/js/app.js"></script>
 </body>

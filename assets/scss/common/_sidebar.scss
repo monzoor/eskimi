@@ -1,0 +1,34 @@
+.sidebar {
+    background-color: #1B62D9;
+    background-image: url('../img/sidebar.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 100vh;
+    a {
+        color: white;
+        i {
+            color: #af91ef;
+        }
+    }
+    li {
+        list-style: none;
+        border-bottom: 1px solid #8766e4;
+        &.active {
+            background-color: white;
+            a, i {
+                color: #4a545c;
+            }
+        }
+    }
+    .active {
+        position: relative;
+        &:after {
+            content: "\f105";
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-family: FontAwesome;
+        }
+    }
+}

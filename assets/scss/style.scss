@@ -3,9 +3,10 @@
 @import "bootstrap-custom/bt4_variables";
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "common/00_bootstrap-reset";
-@import "common/02_shoparu_variables";
+@import "common/02_eskimi_variables";
 @import "common/03_global";
 @import "common/04_icon";
 @import "common/05_typography";
+@import "common/icon_font";
+@import "common/sidebar";
 @import "common/utils";
-@import "common/utils_sizers";
