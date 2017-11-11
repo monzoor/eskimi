@@ -1,0 +1,13 @@
+.more {
+    a {
+        &:after {
+            display: none;
+        }
+    }
+    .dropdown-menu  {
+        &.show {
+            left: auto;
+            right: 0;    
+        }
+    }
+}

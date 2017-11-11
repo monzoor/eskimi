@@ -4,6 +4,8 @@
     background-repeat: no-repeat;
     background-position: top;
     height: 100vh;
+    position: fixed;
+    left: 0;
     a {
         color: white;
         i {
@@ -11,17 +13,20 @@
         }
     }
     li {
-        list-style: none;
         border-bottom: 1px solid #8766e4;
-        &.active {
-            background-color: white;
-            a, i {
-                color: #4a545c;
+        a {
+            &:hover {
+                @extend .active;
             }
         }
     }
     .active {
         position: relative;
+        background-color: white;
+        color: #4a545c;
+        i {
+            color: #4a545c;
+        }
         &:after {
             content: "\f105";
             position: absolute;

@@ -1,0 +1,117 @@
+/* Style the calendar custom widget */
+#date-range {
+    position:relative;
+}
+#date-range-field {
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    position: relative;
+    cursor:pointer;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px 5px 5px 5px;
+}
+#date-range-field a  {
+    // color:#B2B2B2;
+    // background-color:#F7F7F7;
+    text-align:center;
+    display: block;
+    position: absolute;
+    width: 26px;
+    height: 23px;
+    top: 0;
+    right: 0;
+    text-decoration: none;
+    padding-top:6px;
+    border-radius: 0 5px 5px 0;
+}
+#date-range-field span {
+    font-size: 12px;
+    font-weight: bold;
+    color: #404040;
+    position: relative;
+    top: 0;
+    height: 26px;
+    line-height: 26px;
+    left: 5px;
+    width: 250px;
+    text-align: center;
+}
+
+#datepicker-calendar {
+    position: absolute;
+    top: 27px;
+    left: -200px;
+    overflow: hidden;
+    width: 497px;
+    height: 167px;
+    background-color: #F7F7F7;
+    border: 1px solid #CCCCCC;
+    border-radius: 0 5px 5px 5px;
+    display:none;
+    padding:10px 0 0 10px;
+    z-index: 1;
+}
+
+/* Remove default border from the custom widget since we're adding our own.  TBD: rework the dropdown calendar to use the default borders */
+#datepicker-calendar div.datepicker {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+}
+
+.datepicker-apply {
+    position: absolute;
+    top: 145px;
+    left: 420px;
+    width: 70px;
+}
+
+a.js-datepicker-apply {
+    color: #008ed6 !important;
+    cursor: pointer;
+}
+
+a.js-datepicker-apply:hover {
+    text-decoration: underline;
+}
+
+.datepickerContainer {
+    display: table;
+}
+.additionalDates {
+    width: 100%;
+    text-align: center;
+    margin-top: -8px
+}
+
+.additionalDates.row-fluid .span20 {
+    min-height: 18px;
+    width: 20%;
+    margin-left: 0
+}
+
+#date-range #datepicker-calendar {
+    height: 225px;
+    top: 39px;
+    left: -157px;
+    width: 467px;
+    border-radius: 0;
+}
+
+#datepicker-calendar .datepicker-apply {
+    top: 184px;
+    left: 377px;
+}
+div.datepicker th a.datepickerMonth {
+    margin-left: 0;
+}
+#date-range-field a {
+    color: #4a545c;
+    font-weight: bold;
+
+}
+#date-range-field {
+    border-radius: 3px !important;
+}

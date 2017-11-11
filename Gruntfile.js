@@ -111,7 +111,7 @@ module.exports = function(grunt) {
                 livereload: true,
             },
             sass: {
-                files: ['assets/scss/**/*.{sass,scss}', '*.html'],
+                files: ['assets/scss/**/*.{sass,scss}', '*.php'],
                 tasks: ['sass_globbing', 'sass', 'autoprefixer', 'copy']
             },
             scripts: {

@@ -1,0 +1,41 @@
+.overview-nav {
+    a {
+        color: #4a545c;
+        background-color: white;
+        border-right: 1px solid $border-color;
+        a:last-child {
+            background-color: red;
+        }
+    }
+}
+#graph {
+    min-width: 310px; height: 300px;
+}
+.campaigns {
+    #myTable_wrapper {
+        position: relative;
+        .badge {
+            font-size: 40%;
+            vertical-align: super;
+        }
+        td, th {
+            @extend .pl-0;
+            @extend .py-3;
+        }
+        th {
+            @extend .text-nowrap;
+            color: #949ba0;
+            &:first-child {
+                @extend .px-4;
+            }
+            a {
+                color: #4a545c;
+            }
+        }
+        .odd {
+            .dataTables_empty {
+                padding-left: 20px !important;
+            }
+        }
+    }
+}

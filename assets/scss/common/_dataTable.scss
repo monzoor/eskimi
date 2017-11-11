@@ -1,0 +1,116 @@
+.dataTables_wrapper {
+    @extend .pb-5;
+}
+
+
+.sorting_desc, .sorting_asc {
+    position: relative;
+    color: #4a545c !important;
+    &:before {
+        content: "\f176";
+        font-family: FontAwesome;
+        position: absolute;
+        left: -8px;
+    }
+}
+.sorting_asc {
+    &:before {
+        content: "\f175";
+        font-family: FontAwesome;
+        position: absolute;
+        left: -8px;
+    }
+}
+.dataTable {
+    > thead {
+        >tr > th {
+            cursor: pointer;
+        }
+        > tr > th:first-child {
+            &.sorting_asc, &.sorting_desc {
+                &:before {
+                    left: 10px;
+                }
+            }
+        }
+    }
+    > tbody {
+        >tr {
+            &:last-child {
+                border-bottom: 1px solid #e9ecef;
+            }
+        }
+    }
+}
+
+
+
+.dataTables_filter {
+    display: inline-block;
+    float: right;
+    margin-top: -74px;
+    margin-right: 30px;
+    label {
+        &:before {
+            content: "\f002";
+            font-family: FontAwesome;
+        }
+    }
+    input {
+        border: 0;
+        margin-left: 10px;
+        width: 60px;
+    }
+}
+.dataTables_length {
+    position: absolute;
+    right: 260px;
+    bottom: 0;
+    display: inline-block;
+    font-size: 14px;
+}
+.dataTables_paginate {
+    position: absolute;
+    display: inline-block;
+    right: 20px;
+    bottom: 0;
+    a {
+        font-size: 34px;
+        color: #4a545c;
+    }
+    .previous {
+        margin-right: 30px;
+    }
+    .next {
+        margin-left: 30px;
+    }
+    span {
+        display: none;
+    }
+}
+.dataTables_info {
+    position: absolute;
+    right: 140px;
+    display: inline-block;
+    bottom: 6px;
+    font-size: 14px;
+}
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+    margin-left: 40px;
+
+    background-repeat: no-repeat;
+    background-size: 0.5em auto;
+    background-position: right 0.25em center;
+    padding-right: 1em;
+
+    background-image: url("data:image/svg+xml;charset=utf-8, \
+    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 40'> \
+      <polygon points='0,0 60,0 30,40' style='fill:black;'/> \
+    </svg>");
+    border: 0;
+    background-color: transparent;
+}
