@@ -9,3 +9,4 @@ To work with Eskimi front end you need to follow this steps
 - `grunt` it will create the assets for dev
 - `grunt server` it will create the assets for dev and watch the changes
 - `grunt build` it will create the assets for production
+- `php -S 127.0.0.1:3333` Run simple PHP server
