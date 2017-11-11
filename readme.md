@@ -1,4 +1,4 @@
-# Falcon front end setup
+# Eskimi front end setup
 
 To work with Eskimi front end you need to follow this steps
 #### Installation
